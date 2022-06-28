@@ -1,0 +1,32 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.App {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btns {
+    margin: 10px 0;
+}
+
+.timeZones {
+    height: 100px;
+}
+
+.selectZoneBtn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.select {
+    width: 300px;
+}
+
