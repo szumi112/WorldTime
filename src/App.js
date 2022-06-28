@@ -50,7 +50,7 @@ setTimeout(() => {
       <p> Please choose your timezone </p>
       <Select className="select" options={options} onChange={setChoice}></Select>
       <p><strong>Current:</strong> {choice?.label}</p>
-      <p><strong>Time: </strong>{localtime ? moment(localtime).format("YYYY MMMM dddd, h:mm:ss a") : null}</p>
+      <p><strong>Time: </strong>{localtime ? moment(localtime).format("MMMM Do YYYY, h:mm:ss a") : null}</p>
     </div>
   );
 }
