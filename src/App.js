@@ -38,19 +38,20 @@ setTimeout(() => {
       console.log("there was an error with connecting to database")
     })
 
-  }, [choice, timeInterval]);
+  }, [choice, selectedApi, timeInterval]);
 
   const options = timezone.map(str => ({label: str}));
+  const date = localtime?.substring(0,19).replace('T',' ');
+  console.log("date is: " + date)
 
   // console.log(JSON.stringify(choice.value))
-
 
   return (
     <div className="App">
       <p> Please choose your timezone </p>
       <Select className="select" options={options} onChange={setChoice}></Select>
       <p><strong>Current:</strong> {choice?.label}</p>
-      <p><strong>Time: </strong>{localtime ? moment(localtime).format("MMMM Do YYYY, h:mm:ss a") : null}</p>
+      <p><strong>Time: </strong>{localtime ? <div> {date} </div> : null}</p>
     </div>
   );
 }
