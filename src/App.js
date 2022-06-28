@@ -48,7 +48,7 @@ setTimeout(() => {
     <div className="App">
       <p> Please choose your timezone </p>
       <Select className="select" options={options} onChange={setChoice}></Select>
-      <p><strong>Current:</strong> {JSON.stringify(choice?.label).replace("_", " ").replace('"', ' ').replace('"', ' ').replace("/", " / ")}</p>
+      <p><strong>Current:</strong> {choice.label ? JSON.stringify(choice?.label).replace("_", " ").replace('"', ' ').replace('"', ' ').replace('/', ' / ') : null}</p>
       <p><strong>Time: </strong>{localtime ? [date] : null}</p>
     </div>
   );
