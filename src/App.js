@@ -42,9 +42,7 @@ setTimeout(() => {
 
   const options = timezone.map(str => ({label: str}));
   const date = localtime?.substring(0,19).replace('T',' ');
-  console.log("date is: " + date)
 
-  // console.log(JSON.stringify(choice.value))
 
   return (
     <div className="App">
