@@ -5,7 +5,7 @@ import moment from "moment";
 
 function App() {
 
-  const apiUrl = `http://worldtimeapi.org/api/timezone`;
+  const apiUrl = `https://worldtimeapi.org/api/timezone`;
   const [timezone, setTimezones] = useState([])
   const [choice, setChoice] = useState('Asia/Yekaterinburg');
   // const [selectedTimeZone, setSelectedTimeZone] = useState();
